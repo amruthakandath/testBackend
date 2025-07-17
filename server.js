@@ -7,7 +7,7 @@ const enquiryRoutes = require('./routes/Enquiry');
 
 const app = express();
 
-app.options('*', cors());
+app.options('/*', cors());
 app.use(express.json());
 
 mongoose
