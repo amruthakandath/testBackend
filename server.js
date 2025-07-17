@@ -6,7 +6,7 @@ const cors = require('cors');
 const enquiryRoutes = require('./routes/Enquiry');
 
 const app = express();
-app.use(cors({origin:[process.env.BASEURL,"http://localhost:5173"]}));
+app.use(cors({origin:[process.env.BASEURL,"http://localhost:5173"],credentials: true}, ));
 app.use(express.json());
 
 mongoose
